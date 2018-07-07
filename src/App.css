@@ -1,0 +1,29 @@
+.Error {
+  background-color: #EF5350;
+  padding: 10px 20px;
+}
+
+.Error:empty {
+  display: none;
+}
+
+.CleanLink {
+  text-decoration: none;
+  color: white;
+}
+
+.CleanLink:hover {
+  color: white;
+}
+
+.CleanLink:focus {
+  color: white;
+}
+
+.alert:empty {
+  display: none;
+}
+
+.InvertColor {
+  color: black;
+}

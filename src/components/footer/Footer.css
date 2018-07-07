@@ -1,0 +1,24 @@
+footer {
+  margin-top: 20vh;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: inherit;
+}
+
+.logos {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos img {
+  margin-right: 5px;
+}
+
+.FooterBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
