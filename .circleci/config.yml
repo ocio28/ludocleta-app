@@ -42,4 +42,4 @@ jobs:
       # run tests!
       - run: yarn test
       - run: yarn build
-      - run: surge --project ./build --domain ludocleta.cl
+      - run: surge --project ./build --domain c28.cl
