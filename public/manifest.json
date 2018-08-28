@@ -1,11 +1,11 @@
 {
-  "name": "Ludocleta",
-  "short_name": "Ludocleta app",
+  "name": "c28",
+  "short_name": "c28 app",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "128x128",
-      "type": "image/x-icon"
+      "type": "image/png"
     }
   ],
   "start_url": "/index.html",

@@ -4,8 +4,6 @@ import Loading from '../components/Loading'
 import logo from '../logo.svg'
 import * as Api from '../lib/Api'
 
-import './Games.css'
-
 export default class Games extends Component {
   state = {
     loading: true,
@@ -31,7 +29,6 @@ export default class Games extends Component {
         <section className="text-center AppTitle">
           <div className="container">
             <img src={logo} width="200" height="200" alt="logo"/>
-            <h1 className="display-1">Ludocleta</h1>
           </div>
         </section>
         {this.state.loading ? <Loading /> :
