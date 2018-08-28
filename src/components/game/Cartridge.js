@@ -19,12 +19,12 @@ export default class Cartridge extends Component {
             <p className="card-text">{game.icons.map((l, i) => <Tag key={i} text={l}/>)}</p>
             <div className="d-flex justify-content-between align-items-center">
               {game.url.length === 0 ?
-                <button type="button" className="btn btn-primary btn-lg btn-block"
+                <button type="button" className="btn cs-primary-bg-color btn-lg btn-block text-white"
                   onClick={this.play}>Jugar</button>
               :
                 <div className="btn-group btn-block">
-                  <button type="button" className="btn btn-primary btn-lg btn-block" onClick={this.play}>Jugar</button>
-                  <button type="button" className="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button type="button" className="btn cs-primary-bg-color btn-lg btn-block text-white" onClick={this.play}>Jugar</button>
+                  <button type="button" className="btn cs-primary-bg-color dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span className="sr-only">Toggle Dropdown</span>
                   </button>
                   <div className="dropdown-menu">

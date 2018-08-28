@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Cartridge from '../components/game/Cartridge'
 import Loading from '../components/Loading'
-import logo from '../logo.svg'
 import * as Api from '../lib/Api'
 
 export default class Games extends Component {
@@ -28,7 +27,7 @@ export default class Games extends Component {
       <div>
         <section className="text-center AppTitle">
           <div className="container">
-            <img src={logo} width="200" height="200" alt="logo"/>
+            <img src="img/logo.png" width="200" height="200" alt="logo"/>
           </div>
         </section>
         {this.state.loading ? <Loading /> :

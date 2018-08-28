@@ -28,13 +28,11 @@
   color: black;
 }
 
-.AppTitle {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+.cs-primary-bg-color {
+  background-color: #1a1a1a;
 }
 
-@media (max-width: 800px) {
-  .AppTitle {
-    display: none;
-  }
+.AppTitle {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
