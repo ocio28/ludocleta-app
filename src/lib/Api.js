@@ -1,4 +1,4 @@
-const stage = '/dev'
+/*const stage = '/dev'
 const ApiUrl = 'https://wthwk4ghue.execute-api.us-east-1.amazonaws.com'
 
 export function games() {
@@ -21,4 +21,11 @@ function response(response) {
 
 function success(response) {
   return response.status === 'success' ? response.data : Promise.reject(response.data)
+}
+*/
+
+import Games from './games'
+
+export function games() {
+  return Promise.resolve(Games)
 }
