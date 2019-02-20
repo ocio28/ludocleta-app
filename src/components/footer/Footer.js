@@ -6,6 +6,7 @@ export default class Footer extends Component {
     return (
       <footer>
         <div className="logos">
+          <div id="tippin-button" data-dest="ocio28"></div>
           <div className="FooterBlock">
             <a href="https://t.me/ocio28" target="blank" className="btn btn-link CleanLink">
               <i className="fab fa-telegram fa-2x"></i>
