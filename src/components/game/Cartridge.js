@@ -18,7 +18,7 @@ export default class Cartridge extends Component {
           </div>
           <div className="col-12 col-md-9 d-flex flex-column justify-content-between">
             <div>
-              <h4>{game.title}</h4>
+              <h4 className="mt-1">{game.title}</h4>
               <div>{game.icons.map((l, i) => <Tag key={i} text={l} />)}</div>
             </div>
             <div>
@@ -40,7 +40,7 @@ export default class Cartridge extends Component {
 }
 
 const Tag = ({text}) => (
-  <small className="text-muted cs-tag">
+  <small className="text-muted p-2">
     {text}
   </small>
 )

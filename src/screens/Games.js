@@ -25,7 +25,7 @@ export default class Games extends Component {
 
   render() {
     return (
-      <div className="row">
+      <div>
         <section className="text-center">
           <img src={logo} className="img-fluid" alt="logo"/>
         </section>
