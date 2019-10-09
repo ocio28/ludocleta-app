@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Cartridge from '../components/game/Cartridge'
 import Loading from '../components/Loading'
 import * as Api from '../lib/Api'
+import logo from "../logo.svg";
 
 export default class Games extends Component {
   state = {
@@ -24,19 +25,17 @@ export default class Games extends Component {
 
   render() {
     return (
-      <div>
-        <section className="text-center AppTitle">
-          <div className="container">
-            <img src="img/logo.png" width="200" height="200" alt="logo"/>
-          </div>
+      <div className="row">
+        <section className="text-center">
+          <img src={logo} className="img-fluid" alt="logo"/>
         </section>
+        <ul className="list-group list-group-flush">
         {this.state.loading ? <Loading /> :
-          <div className="row">
-            {this.state.games.sort(sortGames).map((game, i) => (
+            this.state.games.sort(sortGames).map((game, i) => (
               <Cartridge key={i} game={game} onClick={this.onClick}/>
-            ))}
-          </div>
-        }
+            ))
+          }
+          </ul>
       </div>
     )
   }

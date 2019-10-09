@@ -1,4 +1,4 @@
-export default [{
+[{
     "uuid": "8dbc6112-144a-489a-bf3a-91c24320bdf0",
     "index": 0,
     "name": "popoki",
@@ -25,7 +25,7 @@ export default [{
     "index": 1,
     "name": "neonimo",
     "title": "Neonimo",
-    "html5": "http://ludocleta-games.s3-website-us-east-1.amazonaws.com/neonimo",
+    "html5": "https://c28.cl/juegos/7c00b046-bb1e-419e-be37-d6cd60d3bb94",
     "url": [],
     "width": 672,
     "height": 550,
@@ -34,7 +34,7 @@ export default [{
         "backgroundColor": "#F44336"
     },
     "icons": [
-        "html5",
+        "web",
         "gamepad",
         "keyboard"
     ]
@@ -43,7 +43,7 @@ export default [{
     "index": 2,
     "name": "another-invaders",
     "title": "Another Invaders",
-    "html5": "http://ludocleta-games.s3-website-us-east-1.amazonaws.com/another-invaders",
+    "html5": "https://c28.cl/juegos/698cc02a-424a-4b68-8948-f756c4dc9eab",
     "url": [
         {
             "label": "Windows",
@@ -59,11 +59,6 @@ export default [{
             "label": "Linux",
             "icon": "fab fa-linux",
             "link": "https://github.com/ocio28/another-invaders/releases/download/v0.0.4/another-invaders-linux-v0.0.4.zip"
-        },
-        {
-            "label": "Github",
-            "icon": "fab fa-github",
-            "link": "https://github.com/ocio28/another-invaders"
         }
     ],
     "width": 640,
@@ -82,7 +77,7 @@ export default [{
     "index": 3,
     "name": "saltarina",
     "title": "Saltarina",
-    "html5": "http://ludocleta-games.s3-website-us-east-1.amazonaws.com/saltarina",
+    "html5": "https://c28.cl/juegos/55c17199-cf7c-402c-8342-16531d02354f",
     "url": [],
     "width": 640,
     "height": 512,
@@ -91,21 +86,15 @@ export default [{
         "backgroundColor": "#1E88E5"
     },
     "icons": [
-        "html5"
+        "web"
     ]
 }, {
     "uuid": "ec228767-d8d0-4a8a-8145-cf074e3e2cf5",
     "index": 4,
     "name": "balun",
     "title": "Balun",
-    "html5": "http://ludocleta-games.s3-website-us-east-1.amazonaws.com/balun",
-    "url": [
-        {
-            "label": "Github",
-            "icon": "fab fa-github",
-            "link": "https://github.com/ocio28/balun"
-        }
-    ],
+    "html5": "https://c28.cl/juegos/ec228767-d8d0-4a8a-8145-cf074e3e2cf5",
+    "url": [],
     "width": 512,
     "height": 768,
     "style": {
@@ -113,6 +102,6 @@ export default [{
         "backgroundColor": "#3F51B5"
     },
     "icons": [
-        "html5"
+        "web"
     ]
 }]

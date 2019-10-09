@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './Footer.css'
+import logo from '../../logo.svg'
 
 export default class Footer extends Component {
   render() {
     return (
       <footer>
         <div className="logos">
-          <div id="tippin-button" data-dest="ocio28"></div>
           <div className="FooterBlock">
             <a href="https://t.me/ocio28" target="blank" className="btn btn-link CleanLink">
               <i className="fab fa-telegram fa-2x"></i>
@@ -22,9 +22,10 @@ export default class Footer extends Component {
             </a>
           </div>
           <div className="FooterBlock">
-            <img src="img/logo.png" alt="Ludocleta" width={40} height={40}/>
+            <img src={logo} alt="Ludocleta" width={40} height={40}/>
             <strong>c28 - {new Date().getFullYear()}</strong>
           </div>
+          <div id="tippin-button" data-dest="ocio28"></div>
         </div>
       </footer>
     );

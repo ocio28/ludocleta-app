@@ -32,7 +32,10 @@
   background-color: #1a1a1a;
 }
 
-.AppTitle {
-  margin-top: 5vh;
-  margin-bottom: 10vh;
+.cs-title {
+  margin-bottom: 5vh;
+}
+
+.cs-tag {
+  padding: 5px 5px;
 }

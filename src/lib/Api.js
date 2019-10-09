@@ -24,7 +24,7 @@ function success(response) {
 }
 */
 
-import Games from './games'
+import Games from './games.json'
 
 export function games() {
   return Promise.resolve(Games)

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Cartridge.css';
+
 
 export default class Cartridge extends Component {
   play = () => {
@@ -11,41 +11,36 @@ export default class Cartridge extends Component {
   render() {
     let game = this.props.game
     return (
-      <div className="col-md-4 Cartridge">
-        <div className="mb-4">
-          <h2>{game.title}</h2>
-          <img src={"img/" + game.name + "/mini.png"} alt={game.title} className="card-img-top CartridgeThumb"/>
-          <div className="card-body">
-            <p className="card-text">{game.icons.map((l, i) => <Tag key={i} text={l}/>)}</p>
-            <div className="d-flex justify-content-between align-items-center">
-              {game.url.length === 0 ?
-                <button type="button" className="btn cs-primary-bg-color btn-lg btn-block text-white"
-                  onClick={this.play}>Jugar</button>
-              :
-                <div className="btn-group btn-block">
-                  <button type="button" className="btn cs-primary-bg-color btn-lg btn-block text-white" onClick={this.play}>Jugar</button>
-                  <button type="button" className="btn cs-primary-bg-color dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span className="sr-only">Toggle Dropdown</span>
-                  </button>
-                  <div className="dropdown-menu">
-                    {game.url.map((u, i) => (
-                      <a key={i} className="dropdown-item d-flex align-items-center" href={u.link}>
-                        <i className={u.icon + " fa-2x mr-3"}></i> Descarga para {u.label}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              }
+      <li className="list-group-item cs-li">
+        <div className="row">
+          <div className="col-12 col-md-3 align-self-center">
+            <img src={"img/" + game.name + "/mini.png"} alt={game.title} className="img-fluid"/>
+          </div>
+          <div className="col-12 col-md-9 d-flex flex-column justify-content-between">
+            <div>
+              <h4>{game.title}</h4>
+              <div>{game.icons.map((l, i) => <Tag key={i} text={l} />)}</div>
+            </div>
+            <div>
+              <div className="p-1">
+                {game.url.map((u, i) => (
+                  <a key={i} className="btn btn-link text-danger" href={u.link}>
+                    <i className={u.icon + " fa-2x mr-3"}></i> {u.label}
+                  </a>
+                ))}
+              </div>
+              <button type="button" className="btn btn-outline-danger btn-block text-white"
+                onClick={this.play}>Jugar</button>
             </div>
           </div>
         </div>
-      </div>
+      </li>
     );
   }
 }
 
 const Tag = ({text}) => (
-  <label className="Tag">
+  <small className="text-muted cs-tag">
     {text}
-  </label>
+  </small>
 )
