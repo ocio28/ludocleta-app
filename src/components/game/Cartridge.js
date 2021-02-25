@@ -14,7 +14,7 @@ export default class Cartridge extends Component {
       <li className="list-group-item cs-li">
         <div className="row">
           <div className="col-12 col-md-3 align-self-center">
-            <img src={"img/" + game.name + "/mini.png"} alt={game.title} className="img-fluid"/>
+            <img src={game.thumbnail} alt={game.title} className="img-fluid"/>
           </div>
           <div className="col-12 col-md-9 d-flex flex-column justify-content-between">
             <div>

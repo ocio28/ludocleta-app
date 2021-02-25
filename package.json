@@ -1,12 +1,13 @@
 {
-  "name": "ludocleta",
-  "version": "0.6.0",
+  "name": "c28",
+  "version": "0.7.0",
   "private": true,
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-modal": "^3.1.7",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "semantic-ui-react": "^2.0.3"
   },
   "devDependencies": {
     "react-scripts": "1.1.4"

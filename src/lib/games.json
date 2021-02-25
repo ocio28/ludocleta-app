@@ -3,6 +3,7 @@
     "index": 1,
     "name": "popoki",
     "title": "Popokis Quest",
+    "thumbnail": "img/thumbnail/popoki.png",
     "html5": "https://play.google.com/store/apps/details?id=cl.clororo.games.popoki",
     "url": [
         {
@@ -25,6 +26,7 @@
     "index": 3,
     "name": "neonimo",
     "title": "Neonimo",
+    "thumbnail": "img/thumbnail/neonimo.png",
     "html5": "http://c28.cl/juegos/7c00b046-bb1e-419e-be37-d6cd60d3bb94",
     "url": [],
     "width": 672,
@@ -43,6 +45,7 @@
     "index": 2,
     "name": "another-invaders",
     "title": "Another Invaders",
+    "thumbnail": "img/thumbnail/another-invaders.png",
     "html5": "http://c28.cl/juegos/698cc02a-424a-4b68-8948-f756c4dc9eab",
     "url": [
         {
@@ -77,6 +80,7 @@
     "index": 0,
     "name": "saltarina",
     "title": "Saltarina",
+    "thumbnail": "img/thumbnail/saltarina.png",
     "html5": "http://c28.cl/juegos/55c17199-cf7c-402c-8342-16531d02354f",
     "url": [],
     "width": 640,
@@ -93,6 +97,7 @@
     "index": 4,
     "name": "balun",
     "title": "Balun",
+    "thumbnail": "img/thumbnail/balun.png",
     "html5": "http://c28.cl/juegos/ec228767-d8d0-4a8a-8145-cf074e3e2cf5",
     "url": [],
     "width": 512,

@@ -1,7 +1,5 @@
-# Ludocleta front app
+# c28 webapp
 
-https://ludocleta.cl
+Pagina principal de c28
 
-## REST Api
-
-https://github.com/ocio28/ludocleta-api
+https://c28.cl
