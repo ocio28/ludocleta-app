@@ -3,6 +3,7 @@
   "version": "0.7.0",
   "private": true,
   "dependencies": {
+    "moment": "^2.29.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-modal": "^3.1.7",
@@ -10,12 +11,27 @@
     "semantic-ui-react": "^2.0.3"
   },
   "devDependencies": {
-    "react-scripts": "1.1.4"
+    "@craco/craco": "^6.1.1",
+    "@semantic-ui-react/craco-less": "^1.2.1",
+    "react-scripts": "4.0.1",
+    "semantic-ui-less": "^2.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

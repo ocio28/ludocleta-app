@@ -1,6 +1,52 @@
 import React, { Component } from 'react';
+import { Button, Icon, Item, Label } from 'semantic-ui-react';
+
+import { format_fecha, open_tab } from "../../utils";
 
 
+export default ({ html5, title, tags, url, thumbnail, fecha_publicacion }) => {
+  const play = () => open_tab(html5)
+
+  return (
+    <Item>
+      <Item.Image src={thumbnail} />
+      <Item.Content>
+        <Item.Header as='a' onClick={play}>{title}</Item.Header>
+        <Item.Meta>
+          <span className='cinema'>{format_fecha(fecha_publicacion)}</span>
+        </Item.Meta>
+        <Item.Description>
+          una larga descripcion del juego que tipo que se hace como funciona y eso
+        </Item.Description>
+        {url.length > 0 && <Item.Description>
+          <p>Descargar</p>
+          <Button.Group>
+            {url.map((v, i) => <Descargar key={i} { ...v } />)}
+          </Button.Group>
+        </Item.Description>}
+        <Item.Extra>
+          <Button primary floated='right' onClick={play}>
+            Jugar
+            <Icon name='right chevron' />
+          </Button>
+          {tags.map(v => <Label key={v}>{v}</Label>)}
+        </Item.Extra>
+      </Item.Content>
+    </Item>
+  )
+}
+
+const Descargar = ({ icon, type }) => {
+  if (type === 'OR') {
+    return <Button.Or />
+  }
+  return (
+    <Button icon>
+      <Icon name={icon} />
+    </Button>
+  )
+}
+/*
 export default class Cartridge extends Component {
   play = () => {
     console.log(this.props.game)
@@ -43,4 +89,4 @@ const Tag = ({text}) => (
   <small className="text-muted p-2">
     {text}
   </small>
-)
+)*/
