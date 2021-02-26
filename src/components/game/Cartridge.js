@@ -4,7 +4,7 @@ import { Button, Icon, Item, Label } from 'semantic-ui-react';
 import { format_fecha, open_tab } from "../../utils";
 
 
-export default ({ html5, title, tags, url, thumbnail, fecha_publicacion }) => {
+export default ({ html5, title, tags, url, thumbnail, fecha_publicacion, descripcion }) => {
   const play = () => open_tab(html5)
 
   return (
@@ -16,7 +16,7 @@ export default ({ html5, title, tags, url, thumbnail, fecha_publicacion }) => {
           <span className='cinema'>{format_fecha(fecha_publicacion)}</span>
         </Item.Meta>
         <Item.Description>
-          una larga descripcion del juego que tipo que se hace como funciona y eso
+          {descripcion}
         </Item.Description>
         {url.length > 0 && <Item.Description>
           <p>Descargar</p>

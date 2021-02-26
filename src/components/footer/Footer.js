@@ -11,10 +11,9 @@ export default class Footer extends Component {
     }
 
     return (
-      <footer>
+      <footer style={{ padding: 16 }}>
         <Container textAlign="center">
           <strong>juegos 28 - {new Date().getFullYear()}</strong>
-          <div id="tippin-button" data-dest="ocio28"></div>
         </Container>
       </footer>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Container, Icon, Image, Item } from 'semantic-ui-react';
+import { Button, Container, Header, Icon, Image, Item } from 'semantic-ui-react';
 import moment from "moment";
 
 import Cartridge from '../components/game/Cartridge'
@@ -40,6 +40,11 @@ export default class Games extends Component {
             </Button>
           </div>
           <div id="tippin-button" data-dest="ocio28"></div>
+          <div>
+            <img src="img/logo_simple.png" />
+            <h3>Videojuegos C28</h3>
+            <h4>Todo muy experimental</h4>
+          </div>
         </div>
         <Container>
           {this.state.loading && <Loading />} 
@@ -56,15 +61,18 @@ export default class Games extends Component {
 }
 
 function sortGames(a, b) {
-  return moment(a.fecha_publicacion).isBefore(b.fecha) ? 1 : -1
+  return moment(a.fecha_publicacion).isBefore(b.fecha) ? -1 : 1
 }
 
 const bannerStyle = {
   marginBottom: 16,
-  backgroundImage: 'url(img/banner.png)',
-  backgroundAttachment: 'fixed',
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'contain',
-  minHeight: 330,
-  //width: '100%'  
+  //backgroundImage: 'url(img/banner.png)',
+  //backgroundAttachment: 'fixed',
+  //backgroundRepeat: 'no-repeat',
+  //backgroundSize: 'length',
+  backgroundColor: '#5599ff',
+  textAlign: 'center',
+  minHeight: 300,
+  width: '100%',
+  color: 'white'
 }
