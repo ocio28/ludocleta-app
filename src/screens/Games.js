@@ -31,15 +31,18 @@ export default class Games extends Component {
     return (
       <div>
         <div style={bannerStyle}>
-          <div style={{ padding: 8, textAlign: 'right'}}>
-            <Button icon color="blue" circular onClick={() => open_tab("https://twitter.com/ocio28")}>
-              <Icon name="twitter" />
-            </Button>
-            <Button icon color="red" circular as="a" onClick={() => mail_to("develop@c28.cl")}>
-              <Icon name="mail" />
-            </Button>
+          <div style={{ padding: 8, display: 'flex', width: '100%', justifyContent: 'space-between'}}>
+            <div id="tippin-button" data-dest="ocio28"></div>
+            <div>
+              <Button icon color="blue" circular onClick={() => open_tab("https://twitter.com/ocio28")}>
+                <Icon name="twitter" />
+              </Button>
+              <Button icon color="red" circular as="a" onClick={() => mail_to("develop@c28.cl")}>
+                <Icon name="mail" />
+            
+              </Button>
+            </div>
           </div>
-          <div id="tippin-button" data-dest="ocio28"></div>
           <div>
             <img src="img/logo_simple.png" />
             <h3>Videojuegos C28</h3>
@@ -66,13 +69,14 @@ function sortGames(a, b) {
 
 const bannerStyle = {
   marginBottom: 16,
+
   //backgroundImage: 'url(img/banner.png)',
   //backgroundAttachment: 'fixed',
   //backgroundRepeat: 'no-repeat',
   //backgroundSize: 'length',
   backgroundColor: '#5599ff',
   textAlign: 'center',
-  minHeight: 300,
+  minHeight: 320,
   width: '100%',
   color: 'white'
 }
