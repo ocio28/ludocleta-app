@@ -16,19 +16,19 @@ export default ({ html5, title, tags, url, thumbnail, fecha_publicacion, descrip
           <span className='cinema'>{format_fecha(fecha_publicacion)}</span>
         </Item.Meta>
         <Item.Description>
-          {descripcion}
-        </Item.Description>
-        {url.length > 0 && <Item.Description>
-          <p>Descargar</p>
-          <Button.Group>
-            {url.map((v, i) => <Descargar key={i} { ...v } />)}
-          </Button.Group>
-        </Item.Description>}
-        <Item.Extra>
+          <p style={{width: '50%'}}>{descripcion}</p>
+          {url.length > 0 && <div>
+            <p>Descargar</p>
+            <Button.Group>
+              {url.map((v, i) => <Descargar key={i} { ...v } />)}
+            </Button.Group>
+          </div>}
           <Button primary floated='right' onClick={play}>
             Jugar
             <Icon name='right chevron' />
           </Button>
+        </Item.Description>
+        <Item.Extra>
           {tags.map(v => <Label key={v}>{v}</Label>)}
         </Item.Extra>
       </Item.Content>

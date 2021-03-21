@@ -45,13 +45,13 @@ export default class Games extends Component {
           </div>
           <div>
             <img src="img/logo_simple.png" />
-            <h3>Videojuegos C28</h3>
-            <h4>Todo muy experimental</h4>
+            <h3>C28</h3>
+            <h4>Galeria personal de mini juegos</h4>
           </div>
         </div>
         <Container>
           {this.state.loading && <Loading />} 
-          <Item.Group>
+          <Item.Group divided>
             {this.state.games.sort(sortGames).map((game, i) => (
                 <Cartridge key={i} { ...game } />
               ))
@@ -68,7 +68,7 @@ function sortGames(a, b) {
 }
 
 const bannerStyle = {
-  marginBottom: 16,
+  marginBottom: 64,
 
   //backgroundImage: 'url(img/banner.png)',
   //backgroundAttachment: 'fixed',
