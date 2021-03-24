@@ -23,13 +23,13 @@ export default ({ html5, title, tags, url, thumbnail, fecha_publicacion, descrip
               {url.map((v, i) => <Descargar key={i} { ...v } />)}
             </Button.Group>
           </div>}
+        </Item.Description>
+        <Item.Extra>
+          {tags.map(v => <Label key={v}>{v}</Label>)}
           <Button primary floated='right' onClick={play}>
             Jugar
             <Icon name='right chevron' />
           </Button>
-        </Item.Description>
-        <Item.Extra>
-          {tags.map(v => <Label key={v}>{v}</Label>)}
         </Item.Extra>
       </Item.Content>
     </Item>
