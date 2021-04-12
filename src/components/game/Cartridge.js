@@ -4,7 +4,7 @@ import { Button, Icon, Item, Label } from 'semantic-ui-react';
 import { format_fecha, open_tab } from "../../utils";
 
 
-export default ({ html5, title, tags, url, thumbnail, fecha_publicacion, descripcion }) => {
+export default ({ html5, title, tags, url, thumbnail, fecha_publicacion, descripcion, externo }) => {
   const play = () => open_tab(html5)
 
   return (
@@ -31,6 +31,9 @@ export default ({ html5, title, tags, url, thumbnail, fecha_publicacion, descrip
             <Icon name='right chevron' />
           </Button>
         </Item.Extra>
+        {externo && <Item.Extra>
+          {externo.descripcion} <a href={externo.url} target="blank">{externo.url}</a>
+        </Item.Extra>}
       </Item.Content>
     </Item>
   )

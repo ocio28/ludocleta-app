@@ -137,4 +137,22 @@
     "tags": [
         "android"
     ]
+},
+{
+    "uuid": "externo-01",
+    "index": 6,
+    "fecha_publicacion": "2020-12-24T12:42:00.0Z",
+    "name": "basketandball",
+    "title": "Basket and Ball",
+    "descripcion": "Basket and Ball!, lleva los balones hacia las canastas con la ayuda del teclado o tocandolas. Resuelve diferentes tipos de acertijos en la cancha de baloncesto y gana bonificaciones. Estos bonos te ayudarán a salir de las dificultades.",
+    "thumbnail": "img/thumbnail/basketandball.webp",
+    "html5": "https://gameskeys.net/product/basket-and-ball",
+    "url": [],
+    "tags": [
+        "ios"
+    ],
+    "externo": {
+        "url": "https://gameskeys.net",
+        "descripcion": "En colaboracion con"
+    }
 }]

@@ -64,7 +64,7 @@ export default class Games extends Component {
 }
 
 function sortGames(a, b) {
-  return moment(a.fecha_publicacion).isBefore(b.fecha) ? -1 : 1
+  return moment(a.fecha_publicacion).isBefore(b.fecha_publicacion) ? 1 : -1
 }
 
 const bannerStyle = {
